@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUNNETT GAME</title>
+
+	<style>
+	  body{
+	    font-family:"Georgia";
+	    background-image:url(img/background.png);
+	  }
+
+	  button{
+	    font-family:"Georgia";
+	  }
+	</style>
+</head>
+
+<body>
+  <script>
+    //yuh.
+    function wrong(){
+    	document.getElementById("results").innerHTML = "You are wrong.";
+    }
+
+    function correct(){
+    	document.getElementById("results").innerHTML = "You are correct. Press <a href = 'bloodtype.html'>here</a> to go to the next level.";
+    }
+  </script>
+
+  <center>
+  	<h1>PARENTAL ADVISORY: THE OFFICIAL PUZZLE</h1>
+
+  	<h2>INSTRUCTIONS:</h2>
+
+  	<p>1. Solve the PARENTAL ADVISORY puzzle that is available over at pouls.itch.io. If you have not downloaded it yet, click <a href="https://pouls.itch.io/punnett-bros-the-puzzles">here</a>.</p>
+  	<i>Quick note: if you happen to fail the puzzle, you can press the R key on your keyboard.</i>
+
+  	<p>2. Now that you have solved the puzzle, answer this simple question:</p>
+
+  	<b>WHAT IS THE PROBABILITY OF HOWARD BEING THE CHILD'S FATHER?</b>
+  	<button type = "button" onclick="wrong()">10%</button>
+  	<button type = "button" onclick="wrong()">25%</button>
+  	<button type = "button" onclick="correct()">50%</button>
+  	<button type = "button" onclick="wrong()">90%</button>
+  	<button type = "button" onclick="wrong()">100%</button>
+
+  	<p id = "results"></p>
+  </center>
+</body>
+</html>

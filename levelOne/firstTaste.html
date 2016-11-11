@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUNNETT GAME</title>
+
+	<style>
+	  body{
+	    font-family:"Georgia";
+	    background-image:url(img/background.png);
+	  }
+
+	  button{
+	    font-family:"Georgia";
+	  }
+	</style>
+</head>
+
+<body>
+  <script>
+    //First options.
+  	function correct1(){
+  		document.getElementById("cw1").innerHTML = "You are correct!";
+  	}
+
+  	function wrong1(){
+  		document.getElementById("cw1").innerHTML = "You are wrong. Try again!";
+  	}
+
+  	//Second options.
+  	function correct2(){
+  		document.getElementById("cw2").innerHTML = "You are correct!";
+  	}
+
+  	function wrong2(){
+  		document.getElementById("cw2").innerHTML = "You are wrong. Try again!";
+  	}
+
+  	//Third options.
+  	function correct3(){
+  		document.getElementById("cw3").innerHTML = "You are correct!";
+  	}
+
+  	function wrong3(){
+  		document.getElementById("cw3").innerHTML = "You are wrong. Try again!";
+  	}
+
+  	//Fourth options.
+  	function correct4(){
+  		document.getElementById("cw4").innerHTML = "You are correct!";
+  	}
+
+  	function wrong4(){
+  		document.getElementById("cw4").innerHTML = "You are wrong. Try again!";
+  	}
+  </script>
+
+  <center>
+    <h1>A FIRST TASTE</h1>
+    <p>Howard Fantable is a man that is currently interested in the subject of Punnett Squares. He had just finished studying them, and now, he decided to challenge himself with a puzzle (but it's not <b>that</b> hard, really). Help Howard solve the puzzle!</p>
+
+    <img src = "img/firsttaste.png">
+
+    <p>OPTIONS:</p>
+    <p>1:</p>
+    <button type="button" onclick="correct1()">AA</button>
+    <button type="button" onclick="wrong1()">aA</button>
+
+    <p id = "cw1"></p>
+
+    <p>2:</p>
+    <button type="button" onclick="correct2()">AA</button>
+    <button type="button" onclick="wrong2()">Aa</button>
+
+    <p id = "cw2"></p>
+
+    <p>3:</p>
+    <button type="button" onclick="correct3()">AA</button>
+    <button type="button" onclick="wrong3()">Cc</button>
+
+    <p id = "cw3"></p>
+
+    <p>4:</p>
+    <button type="button" onclick="correct4()">AA</button>
+    <button type="button" onclick="wrong4()">Bb</button>
+
+    <p id = "cw4"></p>
+
+    <h3><i>Have you finished this level? If so...</i></h3>
+    <button type = "button"><a href = "secondTime.html">Press here to go to the next level.</a></button>
+  </center>
+</body>
+</html>
