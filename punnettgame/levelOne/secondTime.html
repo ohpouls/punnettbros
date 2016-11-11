@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUNNETT GAME</title>
+
+	<style>
+	  body{
+	    font-family:"Georgia";
+	    background-image:url(img/background.png);
+	  }
+
+	  button{
+	    font-family:"Georgia";
+	  }
+	</style>
+</head>
+
+<body>
+  <center>
+    <script>
+      function correct1(){
+      	document.getElementById("cw1").innerHTML = "You are correct this time... and that is great. Keep going on!";
+      }
+
+      function wrong1(){
+      	document.getElementById("cw1").innerHTML = "You should redo the first puzzle. You are wrong!";
+      }
+
+      function correct2(){
+      	document.getElementById("cw2").innerHTML = "Again, you are correct. A cause for celebration, isn't it?";
+      }
+
+      function wrong2(){
+      	document.getElementById("cw2").innerHTML = "You are wrong. You're not prepared, it seems.";
+      }
+
+      function wrong3(){
+      	document.getElementById("cw3").innerHTML = "I think you're wrong again...";
+      }
+
+      function correct3(){
+      	document.getElementById("cw3").innerHTML = "You have proven yourself to be correct.";
+      }
+
+      function wrong4(){
+      	document.getElementById("cw4").innerHTML = "Dear heavens... what have you done?! It is absolutely WRONG!!!!!";
+      }
+
+      function correct4(){
+      	document.getElementById("cw4").innerHTML = "Ah! A good job! An amazing job! It is most certainly correct.";
+      }
+    </script>
+    
+    <h1>SECOND TIME</h1>
+    <p>Now you must help Howard Johnson solve another Punnett Square puzzle. He decided to challenge him a little bit more here, but he still needs your help, as he is not aware that he can solve an entire Punnett Square puzzle by himself.</p>
+
+    <p>The game's difficulty will slightly increase in each puzzle, and in each level. Be careful!</p>
+    <img src = "img/secondtime.png">
+
+    <p>OPTIONS:</p>
+
+    <p>1:</p>
+    <button type="button" onclick = "wrong1()">aa</button>
+    <button type="button" onclick = "correct1()">AA</button>
+    <p id ="cw1"></p>
+
+    <p>2:</p>
+    <button type="button" onclick="correct2()">Aa</button>
+    <button type="button" onclick="wrong2()">AA</button>
+    <p id = "cw2"></p>
+
+    <p>3:</p>
+    <button type="button" onclick="wrong3()">aa</button>
+    <button type="button" onclick="correct3()">Aa</button>
+    <p id = "cw3"></p>
+
+    <p>4:</p>
+    <button type="button" onclick="wrong4()">aA</button>
+    <button type="button" onclick="correct4()">aa</button>
+    <p id = "cw4"></p>
+
+    <button type="button"><a href="levelTwo/leveltwo.html">CLICK HERE IF YOU HAVE FINISHED THIS PUZZLE.</a></button>
+
+  </center>
+</body>
+</html>
