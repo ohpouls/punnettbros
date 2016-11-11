@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUNNETT GAME</title>
+
+	<style>
+	  body{
+	    font-family:"Georgia";
+	    background-image:url(img/background.png);
+	  }
+
+	  button{
+	    font-family:"Georgia";
+	  }
+	</style>
+</head>
+
+<body>
+  <script>
+    function correct(){
+    	document.getElementById("result").innerHTML = "You are correct. Click here in order to face the <a href = 'higgsboson/puzzle.html'>ultimate challenge</a>.";
+    }
+
+    function wrong(){
+    	document.getElementById("result").innerHTML = "You are wrong.";
+    }
+  </script>
+
+  <center>
+  	<h1>BLOOD TYPE</h1>
+
+  	<p>A student was asked to find out his parent's blood type. He found out that his mom's blood type is A (represented by Ai on the Punnett Square), and his dad's blood type is O (which is represented by ii on the Punnett Square). However, his bloodtype is AB. Who is really his parent? Are his parents actually his parents? Find out.</p>
+
+  	<h2>INSTRUCTIONS:</h2>
+
+  	<p>Solve the puzzle available on pouls.itch.io.</p>
+
+  	<p>After solving, you must answer:</p>
+  	<b>WHO IS HIS ACTUAL PARENT?</b>
+
+  	<button type="button" onclick="correct()">His mom</button>
+  	<button type="button" onclick="wrong()">His dad</button>
+
+  	<p id = "result"></p>
+  </center>
+</body>
+</html>

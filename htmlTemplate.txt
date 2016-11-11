@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUNNETT GAME</title>
+
+	<style>
+	  body{
+	    font-family:"Georgia";
+	    background-image:url(img/background.png);
+	  }
+
+	  button{
+	    font-family:"Georgia";
+	  }
+	</style>
+</head>
+
+<body>
+  <center>
+
+  </center>
+</body>
+</html>
